@@ -1,0 +1,9 @@
+<VBox xmlns:fx="http://javafx.com/fxml" fx:controller="controllers.PostUploadController" spacing="10" padding="10">
+    <Label text="Create a Post"/>
+    <TextArea fx:id="contentField" promptText="What's on your mind?" prefRowCount="4"/>
+    <HBox spacing="10">
+        <Button text="Choose Image" onAction="#chooseImage"/>
+        <Label fx:id="imageNameLabel" text="No file chosen"/>
+    </HBox>
+    <Button text="Post" onAction="#submitPost"/>
+</VBox>

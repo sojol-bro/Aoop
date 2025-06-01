@@ -1,0 +1,9 @@
+<VBox spacing="5" style="-fx-border-color: lightgray; -fx-padding: 10;">
+    <Label fx:id="usernameLabel" style="-fx-font-weight: bold;" />
+    <Label fx:id="contentLabel" wrapText="true" />
+    <ImageView fx:id="postImage" fitHeight="200" preserveRatio="true" visible="false" />
+    <HBox spacing="10">
+        <Button text="Like" onAction="#onLikeClicked" />
+        <Button text="Comment" onAction="#onCommentClicked" />
+    </HBox>
+</VBox>

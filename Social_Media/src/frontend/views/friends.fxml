@@ -1,0 +1,6 @@
+<VBox xmlns:fx="http://javafx.com/fxml" fx:controller="controllers.FriendsController" spacing="10" padding="10">
+    <Label text="Your Friends"/>
+    <ListView fx:id="friendList"/>
+    <Label text="Pending Requests"/>
+    <ListView fx:id="pendingList"/>
+</VBox>

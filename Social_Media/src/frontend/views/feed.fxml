@@ -1,0 +1,7 @@
+<VBox xmlns:fx="http://javafx.com/fxml" fx:controller="controllers.FeedController" spacing="10" padding="10">
+    <TextArea fx:id="postContent" promptText="What's on your mind?" wrapText="true"/>
+    <Button text="Post" onAction="#handleCreatePost"/>
+    <ScrollPane fitToWidth="true">
+        <VBox fx:id="feedBox" spacing="10"/>
+    </ScrollPane>
+</VBox>
