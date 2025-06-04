@@ -1,0 +1,6 @@
+<VBox spacing="10" xmlns:fx="http://javafx.com/fxml" fx:controller="frontend.controllers.PostViewController">
+    <TextArea fx:id="contentArea" promptText="What's on your mind?" wrapText="true" />
+    <Button text="Upload Image" onAction="#onUploadImage"/>
+    <Button text="Post" onAction="#onPost"/>
+    <ListView fx:id="timelineList" prefHeight="400" />
+</VBox>

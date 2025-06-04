@@ -1,0 +1,40 @@
+@FXML private Button followButton;
+@FXML private Label followersLabel, followingLabel;
+
+private boolean isFollowing = false;
+private int viewedUserId;
+
+public void setUserId(int userId) {
+    this.currentUserId = userId;
+    loadProfile(userId);
+}
+
+public void viewOtherUserProfile(int userIdToView) {
+    this.viewedUserId = userIdToView;
+    this.isFollowing = FollowController.isFollowing(currentUserId, viewedUserId);
+    updateFollowButton();
+    loadProfile(userIdToView);
+}
+
+@FXML
+public void onFollowClicked() {
+    if (isFollowing) {
+        FollowController.unfollow(currentUserId, viewedUserId);
+    } else {
+        FollowController.follow(currentUserId, viewedUserId);
+    }
+    isFollowing = !isFollowing;
+    updateFollowButton();
+    updateFollowCounts();
+}
+
+private void updateFollowButton() {
+    followButton.setText(isFollowing ? "Unfollow" : "Follow");
+}
+
+private void updateFollowCounts() {
+    int followers = FollowController.getFollowerCount(viewedUserId);
+    int following = FollowController.getFollowingCount(viewedUserId);
+    followersLabel.setText("Followers: " + followers);
+    followingLabel.setText("Following: " + following);
+}

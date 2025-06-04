@@ -1,0 +1,7 @@
+<VBox xmlns:fx="http://javafx.com/fxml" fx:controller="controllers.ProfileController" spacing="10" alignment="CENTER">
+    <ImageView fx:id="profileImageView" fitHeight="100" fitWidth="100"/>
+    <TextField fx:id="usernameField" promptText="Username"/>
+    <TextArea fx:id="bioArea" promptText="Bio" prefRowCount="4"/>
+    <Button text="Update Profile" onAction="#handleUpdateProfile"/>
+    <Label fx:id="statusLabel"/>
+</VBox>

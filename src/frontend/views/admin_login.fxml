@@ -1,0 +1,7 @@
+<VBox xmlns:fx="http://javafx.com/fxml" fx:controller="controllers.AdminLoginController" spacing="10" alignment="CENTER" padding="20">
+    <Label text="Admin Login"/>
+    <TextField fx:id="usernameField" promptText="Username"/>
+    <PasswordField fx:id="passwordField" promptText="Password"/>
+    <Button text="Login" onAction="#login"/>
+    <Label fx:id="errorLabel" textFill="red"/>
+</VBox>

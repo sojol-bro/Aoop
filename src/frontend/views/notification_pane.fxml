@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox fx:id="notificationPane" spacing="10" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1"
+      fx:controller="frontend.controllers.NotificationController">
+    <Label text="Notifications" />
+    <ListView fx:id="notificationList" prefHeight="150" prefWidth="300" />
+    <Label fx:id="notificationBadge" text="0" style="-fx-background-color: red; -fx-text-fill: white; -fx-font-weight: bold; -fx-padding: 5;" visible="false"/>
+</VBox>

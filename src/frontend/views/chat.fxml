@@ -1,0 +1,7 @@
+<VBox spacing="10" xmlns:fx="http://javafx.com/fxml" fx:controller="controllers.ChatController">
+    <TextArea fx:id="chatArea" editable="false" prefHeight="300"/>
+    <HBox spacing="10">
+        <TextField fx:id="messageField" HBox.hgrow="ALWAYS"/>
+        <Button text="Send" onAction="#sendMessage"/>
+    </HBox>
+</VBox>

@@ -1,0 +1,6 @@
+<VBox spacing="10" xmlns:fx="http://javafx.com/fxml" fx:controller="frontend.controllers.CommentSectionController">
+    <Label fx:id="postTitle" style="-fx-font-weight: bold;" />
+    <TextArea fx:id="commentInput" promptText="Write a comment..." wrapText="true"/>
+    <Button text="Submit" onAction="#onSubmitComment" />
+    <ListView fx:id="commentsList" prefHeight="300" />
+</VBox>

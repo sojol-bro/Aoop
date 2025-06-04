@@ -1,0 +1,24 @@
+📁 ChatServer.java
+✅ Purpose:
+This is the WebSocket server endpoint that:
+
+Accepts new client connections
+
+Receives messages from one client
+
+Broadcasts those messages to all other connected clients
+
+Handles disconnection and errors
+
+📌 Key Functions:
+Method	Role
+@OnOpen	Adds new client sessions to the set when a user connects
+@OnMessage	Receives a message and sends it to all connected clients via thread
+@OnClose	Removes a client when they disconnect
+@OnError	Handles connection-level errors
+
+🔁 Connected Clients:
+Stored in a CopyOnWriteArraySet<Session> so we can safely send messages to all of them in real-time.
+
+📍 Where to Place:
+src/websocket/ChatServer.java

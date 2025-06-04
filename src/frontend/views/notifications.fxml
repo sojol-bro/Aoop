@@ -1,0 +1,4 @@
+<VBox xmlns:fx="http://javafx.com/fxml" fx:controller="controllers.NotificationControllerFx" spacing="10" padding="10">
+    <Label text="Your Notifications"/>
+    <ListView fx:id="notificationList"/>
+</VBox>

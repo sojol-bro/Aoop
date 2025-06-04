@@ -1,0 +1,5 @@
+<VBox spacing="10" xmlns:fx="http://javafx.com/fxml" fx:controller="frontend.controllers.UserSearchController">
+    <TextField fx:id="searchField" promptText="Search users by name or email..." />
+    <Button text="Search" onAction="#onSearchClicked" />
+    <ListView fx:id="resultsList" prefHeight="400" />
+</VBox>

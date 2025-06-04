@@ -1,0 +1,15 @@
+<VBox spacing="10" alignment="CENTER" xmlns:fx="http://javafx.com/fxml/1"
+      fx:controller="frontend.controllers.ProfileController">
+
+    <ImageView fx:id="profileImage" fitHeight="150" fitWidth="150" style="-fx-border-radius: 100;" />
+    <Label fx:id="usernameLabel" style="-fx-font-size: 18; -fx-font-weight: bold;" />
+    <TextArea fx:id="bioTextArea" promptText="Tell something about you..." />
+    <TextField fx:id="locationField" promptText="Location" />
+
+    <Button text="Change Profile Picture" onAction="#onChangePictureClicked" />
+    <Button text="Save Profile" onAction="#onSaveProfileClicked" />
+    <Button fx:id="followButton" onAction="#onFollowClicked" text="Follow" />
+    <Label fx:id="followersLabel" />
+    <Label fx:id="followingLabel" />
+
+</VBox>
